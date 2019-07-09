@@ -141,7 +141,7 @@
     </div>
   </div>
   <footer class="footer1">
-    <p>© 2016 Ninestars Information Technologies Ltd <span class="pull-right">Powered by Ninestars</span></p>
+    <p>© <?php echo date('Y');?></p>
   </footer>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
