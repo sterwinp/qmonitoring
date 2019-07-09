@@ -1,0 +1,1 @@
+[{"id":1,"name":"query_info","query":"select * from orders","period":15000},{"id":2,"name":"query_info1","query":"select * from persons","period":15000}]
