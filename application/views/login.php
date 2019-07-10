@@ -26,7 +26,7 @@
             <div class="navbar-header">
         <!--        <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
       -->
-      <a href="#" class="navbar-brand logo-q-login">QMONITORING</a> </div>
+      <a href="#" class="navbar-brand logo-q-login"><?php echo LOGO;?></a> </div>
       <!--/.navbar-collapse -->
     </div>
   </nav>
@@ -152,6 +152,7 @@
 <script src="<?php echo base_url();?>application/asserts/js/bootstrap.min.js"></script>
 <script type="text/javascript">
   var baseurl = "<?php echo base_url(); ?>";
+  
 </script>
 </body>
 </html>

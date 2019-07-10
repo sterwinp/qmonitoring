@@ -6,12 +6,39 @@ class Process_model extends CI_Model
 	{
 		$query = array();
 		$query_json = FCPATH.WORKFILES.QUERY_IN;
+		$result = array();
 		if( file_exists( $query_json ) )
 		{
 			$query_data = file_get_contents( $query_json );
 			$query = json_decode( $query_data,1 );
+			if( is_array( $query ) && !empty( $query ) && count( $query ) != 0 )
+			{
+				foreach ($query as $qkey => $qval) 
+				{
+					$query_result = $this->getqueryresult( $qval['name'] );
+					$qval['q_result'] = $query_result;
+					$result[] = $qval;
+				}
+			}
 		}
-		return $query;
+		return $result;
+	}
+
+	function getqueryresult( $queryname )
+	{
+		$date = date('Ymd');
+		$query_result = array();
+		$file_opt = FCPATH.WORKFILES.QUERY_OUT.$date;
+		if( file_exists( $file_opt ) )
+		{
+			$file_name = $file_opt.'/'.$queryname.'.json';
+			if( file_exists( $file_name ) )
+			{
+				$file_result = file_get_contents( $file_name );
+				$query_result = array_reverse(json_decode( $file_result,1 ));
+			}
+		}
+		return $query_result;
 	}
 
 	function getresult( $data )

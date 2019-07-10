@@ -1183,9 +1183,16 @@ hr{border-top: 1px dashed #d70000;}
 
 .logo-q{color: #fff;
 font-size: 25px;}
-.logo-q-login{color: #5981FA;font-weight: bold;
+.logo-q-login{color: #5981FA;
 font-size: 25px;}
 .fnt-sze{font-size: 10px;}
 .mgn0{margin: 0px !important;}
 .qresult{font-size: 12px;}
 .q-head{font-weight: bold;font-size: 15px;}
+.fldset{border: 2px solid #ccc;margin: 0 2px;padding: .35em .625em .75em;}
+.lgnd {border: 0; padding: 0 10px; display: inline; width: auto; font-size: 15px; margin-bottom: 5px; } 
+/*.qstatus,.qresult{margin-top: 30px;}*/
+.qresult {max-height: 200px; overflow-y: auto; }
+.brk-wrd{word-break: break-all; }
+.qmntr{color: #000;}
+#about {height: 100%; width: 300px; border: none; }

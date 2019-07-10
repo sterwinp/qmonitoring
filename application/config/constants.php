@@ -96,7 +96,7 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
 
 define('PROJECT_NAME', 'qmonitoring');
 define('YEAR', date('Y'));
-define('LOGO', 'QMONITORING');
+define('LOGO', '<strong class="qmntr">Q</strong> Monitoring');
 define('ASSERTS', 'application/asserts/');
 
 

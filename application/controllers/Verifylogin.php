@@ -68,7 +68,7 @@ class Verifylogin extends CI_Controller {
       {
         foreach ($user_data as $user_key => $user_val) 
         {
-          if( $user_val['email'] == $data['user'] && $user_val['password'] == md5($data['password']) )
+          if( $user_val['user'] == $data['user'] && $user_val['password'] == md5($data['password']) )
           {
             $login = 1;
             $user = $user_val;
