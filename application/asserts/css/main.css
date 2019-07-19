@@ -1134,7 +1134,7 @@ hr{border-top: 1px dashed #d70000;}
 .slt-pnl  h4 a{color:#333; text-shadow: 1px 1px 3px #919191;}
 .ftpfle-tit-b{width:36%;  color: #999;text-align:right;}
 .ftpfle-tit-bh{width:36%;  text-align:right;}
-.srvr-tme{margin-top: 45px;float: right;}
+.srvr-tme{margin-top: 12px;font-size: 12px;}
 .db-input{outline: none;}
 /*.db-input[type=search] {-webkit-appearance: textfield;-webkit-box-sizing: content-box;font-family: inherit;font-size: 100%;}*/
 /*.db-input::-webkit-search-decoration,
